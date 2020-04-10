@@ -1,0 +1,60 @@
+/* 公共样式 */
+/* 清除默认样式 */
+/* a标签的默认样式 margin padding */
+
+/* 通配符默认样式 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 清除点击高亮效果 手机上可以看到 */
+    -webkit-tap-hightlight-color: transparent;
+    /* 以border开始计算宽度 */
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-size: 14px;
+    /* sans-sserif 是手机端默认的字体样式 */
+    font-family: 'Microsoft YaHei' sans-serif;
+}
+a {
+    /* a标签链接的  颜色 下划线 */
+    text-decoration: none;
+    color: #000;
+}
+li {
+    list-style: none;
+}
+input,textarea {
+    /* 去除输入框 默认样式边框 */
+    border: none;
+    /* 禁止textarea 输入框可以伸缩 */
+    resize: none;
+    outline: none;
+    /* 清除移动设备上的立体效果 */
+    -webkit-appearance: none;
+}
+  
+
+
+/* 清除浮动 */
+.clearfix::after, .clearfix::before {
+    content: '';
+    display: block;
+    height: 0;
+    line-height: 0;
+    /* 清除全部样式，用于多个div */
+    clear: both;
+    visibility: hidden;
+}
+
+[class*='icon-']{
+    width: 60px;
+    height: 40px;
+    /* background-image: url(../images/sprites.png); */
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
