@@ -15,7 +15,7 @@ var template = require('art-template')
 
 // 设置数组  默认值 点击数组进行添加必须是 对象形式的数组元素
 var comments = [
-    {name:'张三',message:'我先试试看1',dataTime:'2020-05-01'},
+    {name:'张三',message:'我先试试看1吧',dataTime:'2020-05-01'},
     {name:'李四光',message:'我先试试看2',dataTime:'2020-05-01'},
     {name:'王五强',message:'我先试试看3',dataTime:'2020-05-01'},
 ]
