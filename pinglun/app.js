@@ -3,7 +3,7 @@
 // 先把大框架搭出来，然后在里边添加内容。
 //  1.先判断请求的路径是谁，例如，跳转的是'/',就到首页；跳转的是'post'，就到评论提交页。因为是一个form表单，点击提交按钮，action='url地址'，指定接收并处理的服务器程序。
 
-fhka
+
 // 引入文件
 var fs = require('fs')// require作用： 1.加载文件模块并执行里面的代码2.拿到被加载文件模块导出的接口对象                    
 //  1.加载http核心模块
@@ -16,8 +16,8 @@ var template = require('art-template')
 // 设置数组  默认值 点击数组进行添加必须是 对象形式的数组元素
 var comments = [
     {name:'张三',message:'我先试试看1',dataTime:'2020-05-01'},
-    {name:'李四',message:'我先试试看2',dataTime:'2020-05-01'},
-    {name:'王五',message:'我先试试看3',dataTime:'2020-05-01'},
+    {name:'李四光',message:'我先试试看2',dataTime:'2020-05-01'},
+    {name:'王五强',message:'我先试试看3',dataTime:'2020-05-01'},
 ]
 
 http.createServer(function (request, response) { //  创建一个Web服务器
